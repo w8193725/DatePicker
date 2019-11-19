@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_picker_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <DatePicker
+            android:id="@+id/dp_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:calendarViewShown="false"
+            android:minDate="1900-01-01"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <TextView
+            android:id="@+id/tv_border"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/btn_select_date"
+            style="@style/AppTheme.Dialog.Button.Done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/done"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</layout>
